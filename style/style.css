@@ -54,3 +54,58 @@ body {
         opacity: 1;
     }
 }
+
+
+
+
+/* Common button styles */
+.demo-btn,
+.source-btn {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 9999px; /* rounded pill shape */
+    border: 2px solid transparent;
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 auto;
+    min-width: 120px;
+    text-align: center;
+}
+
+/* Demo button */
+.demo-btn {
+    color: #4f46e5; /* Indigo */
+    border-color: #c7d2fe;
+}
+.demo-btn:hover {
+    background: linear-gradient(135deg, #6366f1, #a5b4fc);
+    color: #fff;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+}
+
+/* Source button */
+.source-btn {
+    color: #db2777; /* Pink */
+    border-color: #fbcfe8;
+}
+.source-btn:hover {
+    background: linear-gradient(135deg, #ec4899, #f472b6);
+    color: #fff;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4);
+}
+
+/* Responsive stacking on small screens */
+@media (max-width: 640px) {
+    .mt-3.flex.items-center.gap-2 {
+        flex-direction: column;
+    }
+    .demo-btn,
+    .source-btn {
+        width: 100%;
+        min-width: unset;
+    }
+}
