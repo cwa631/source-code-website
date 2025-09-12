@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Friends Projects</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-slate-800 antialiased leading-relaxed">
+
+    <!-- Header -->
+    <header class="bg-white/70 backdrop-blur-md shadow-sm sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div
+                    class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-pink-500 flex items-center justify-center text-white font-bold animate-bounce text-sm">
+                    cwa
+                </div>
+                <h1
+                    class="text-lg font-bold bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent">
+                    codewithaditya
+                </h1>
+            </div>
+            <div class="flex gap-2">
+                <a href="https://buymeacoffee.com/codewithaditya631/membership"
+                    class="inline-block px-5 py-2 rounded-full text-sm font-semibold bg-yellow-400 text-black shadow-md hover:shadow-lg hover:scale-105 transition duration-200 ease-in-out">
+                    ☕ Support Me
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-4 py-12 sm:py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <!-- Left Text -->
+        <div class="text-center md:text-left">
+            <h2
+                class="text-3xl sm:text-5xl font-extrabold bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent">
+                Creative Showcase of Friends' Projects
+            </h2>
+            <p class="mt-4 text-slate-600 text-base sm:text-lg">
+                Discover a curated selection of innovative projects by my talented friends—featuring design, code, and
+                creativity—all in one inspiring place. Explore their work and visit their websites. 🚀
+            </p>
+            <div class="mt-6 flex justify-center md:justify-start gap-3">
+                <a href="#projects"
+                    class="px-5 py-3 rounded-xl text-sm font-semibold bg-indigo-600 text-white hover:scale-105 transition">Get
+                    Started</a>
+                <a href="https://youtube.com/@codewithaditya631" target="_blank"
+                    class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold bg-[#FF0000] text-white shadow-md hover:shadow-lg hover:scale-105 transition duration-200 ease-in-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+                        <path
+                            d="M23.498 6.186a2.965 2.965 0 0 0-2.087-2.1C19.656 3.5 12 3.5 12 3.5s-7.656 0-9.411.586a2.965 2.965 0 0 0-2.087 2.1C0 7.943 0 12 0 12s0 4.057.502 5.814a2.965 2.965 0 0 0 2.087 2.1C4.344 20.5 12 20.5 12 20.5s7.656 0 9.411-.586a2.965 2.965 0 0 0 2.087-2.1C24 16.057 24 12 24 12s0-4.057-.502-5.814ZM9.75 15.5v-7l6 3.5-6 3.5Z" />
+                    </svg>
+                    YouTube
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Right Image (Animated Coding Illustration) -->
+        <div class="flex justify-center md:justify-end">
+            <img src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif"
+                alt="Coding Illustration" class="w-80 md:w-[400px] rounded-xl shadow-lg">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <main id="projects" class="max-w-6xl mx-auto px-4 pb-16 flex gap-8">
+        <!-- Sidebar Tabs -->
+        <div class="w-40 flex flex-col gap-3">
+            <button class="tab-btn px-4 py-2 rounded-lg bg-white border text-sm font-semibold shadow tab-active"
+                data-tab="all">All</button>
+            <button class="tab-btn px-4 py-2 rounded-lg bg-white border text-sm font-semibold shadow"
+                data-tab="portfolio">Portfolio</button>
+            <button class="tab-btn px-4 py-2 rounded-lg bg-white border text-sm font-semibold shadow"
+                data-tab="ecommerce">E-commerce</button>
+            <button class="tab-btn px-4 py-2 rounded-lg bg-white border text-sm font-semibold shadow"
+                data-tab="game">Game</button>
+            <button class="tab-btn px-4 py-2 rounded-lg bg-white border text-sm font-semibold shadow"
+                data-tab="other">Other</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div id="projectsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 flex-1"></div>
+
+        <!-- Template -->
+        <template id="projectTemplate">
+            <article class="project-card bg-white rounded-2xl p-5 card-tilt shadow-md">
+                <img class="project-image rounded-lg mb-4" src="assets/project-placeholder.png" alt="project image">
+                <h4 class="text-lg font-semibold">Project Title</h4>
+                <p class="mt-2 text-sm text-slate-500">Short description</p> <!-- Keep this as is -->
+                <div class="mt-3 flex items-center gap-2">
+                    <a class="demo-btn text-sm px-3 py-1 rounded-lg border border-slate-200 hover:bg-indigo-50 transition"
+                        target="_blank">Demo</a>
+                    <a class="source-btn text-sm px-3 py-1 rounded-lg border border-slate-200 hover:bg-pink-50 transition"
+                        target="_blank">Source Code</a>
+                </div>
+            </article>
+        </template>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-10 border-t bg-white/70 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col items-center gap-4">
+            <div class="flex gap-5 text-2xl">
+                <!-- Instagram -->
+                <a href="https://instagram.com/@___aks15___" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="url(#igGradient)" viewBox="0 0 24 24" width="28"
+                        height="28">
+                        <defs>
+                            <linearGradient id="igGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#f58529;" />
+                                <stop offset="50%" style="stop-color:#dd2a7b;" />
+                                <stop offset="100%" style="stop-color:#8134af;" />
+                            </linearGradient>
+                        </defs>
+                        <path
+                            d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm4.75-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z" />
+                    </svg>
+                </a>
+                <!-- Facebook -->
+                <a href="https://facebook.com/profile.php?id=61580426520995" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#1877F2" viewBox="0 0 24 24" width="28" height="28">
+                        <path
+                            d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.3 3h-1.9v7A10 10 0 0 0 22 12" />
+                    </svg>
+                </a>
+                <!-- YouTube -->
+                <a href="https://youtube.com/@codewithaditya631" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#FF0000" viewBox="0 0 24 24" width="28" height="28">
+                        <path
+                            d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.4 3.5 12 3.5 12 3.5s-7.4 0-9.4.6a3 3 0 0 0-2.1 2.1A31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c2 .6 9.4.6 9.4.6s7.4 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.5 15.5v-7l6 3.5-6 3.5z" />
+                    </svg>
+                </a>
+                <!-- BuyMeACoffee -->
+                <a href="https://buymeacoffee.com/codewithaditya631" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#FFDD00" viewBox="0 0 24 24" width="28" height="28">
+                        <path
+                            d="M18.6 4.5c-.1-.4-.5-.7-.9-.7H6.3c-.4 0-.8.3-.9.7L3 13c0 .1 0 .2.1.2.1.1.2.1.3.1h1.5l1.1 6.4c.1.5.5.9 1 .9h10.1c.5 0 .9-.4 1-.9l1.1-6.4H21c.1 0 .2 0 .3-.1.1 0 .1-.1.1-.2l-2.8-8.5zM7.2 19.5l-1-6h11.6l-1 6H7.2z" />
+                    </svg>
+                </a>
+                <!-- Website -->
+                <a href="https://cwa631.github.io/website" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#10B981" viewBox="0 0 24 24" width="28" height="28">
+                        <path
+                            d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 2a8 8 0 0 1 7.9 7h-3.2c-.2-1.9-.8-3.7-1.6-5.2A7.9 7.9 0 0 0 12 4Zm-2.9 1.8c-.9 1.5-1.5 3.3-1.6 5.2H4.3a8 8 0 0 1 4.8-5.2ZM4.3 13h3.2c.2 1.9.8 3.7 1.6 5.2A8 8 0 0 1 4.3 13Zm4.8 0h5.8c-.2 1.9-.8 3.7-1.6 5.2a8 8 0 0 1-2.6 0c-.8-1.5-1.4-3.3-1.6-5.2Zm7.8 0h3.2a8 8 0 0 1-4.8 5.2c.9-1.5 1.5-3.3 1.6-5.2Zm-2-2H9.3c.2-1.9.8-3.7 1.6-5.2.9-1.5 1.9-1.5 2.6 0 .8 1.5 1.4 3.3 1.6 5.2Z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="text-xs text-slate-500">© <span id="year"></span> Friends Projects Showcase. Made with ❤️ by
+                codewithaditya.</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
