@@ -69,6 +69,15 @@ const projects = [
         demo: '#',
         source: 'https://buymeacoffee.com/codewithaditya631/e/451766',
         isFree: false
+    },
+            {
+        title: '✨ CSS Animated Responsive Cards Hover Effects',
+        category: 'other',
+        description: 'Enhance your website with modern, fully responsive animated cards built using only HTML & CSS. Lightweight, customizable, and mobile-friendly—perfect for portfolios, business sites, and product showcases.',
+        image: 'assets/responsive card.png',
+        demo: '#',
+        source: 'https://buymeacoffee.com/codewithaditya631/e/456808',
+        isFree: false
     }
 ];
 
