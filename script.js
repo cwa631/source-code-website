@@ -85,7 +85,7 @@ const projects = [
     description: 'Create stunning glassmorphism cards with hover effects using only HTML & CSS. Frosted glass blur, smooth hover animation, and modern UI design — perfect for websites & portfolios! 💎✨',
     image: 'assets/Glassmorphism Cards Hover Effects .png',
     demo: '#',
-    source: 'buymeacoffee.com/codewithaditya631/e/464321',
+    source: 'https://buymeacoffee.com/codewithaditya631/e/464321',
     isFree: false
 }
 
