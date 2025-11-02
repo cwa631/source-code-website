@@ -22,6 +22,15 @@ const projects = [
         isFree: true
     },
     {
+        title: 'Snake Game',
+        category: 'game',
+        description: 'A fast, responsive HTML/CSS/JS snake game — use arrow keys or swipe to eat food, grow your snake, and beat your high score. Smooth animations and mobile-friendly controls.',
+        image: 'assets/snake game.png',
+        demo: 'https://cwa631.github.io/Snake-Game/',
+        source: 'https://buymeacoffee.com/codewithaditya631/e/456337',
+        isFree: true
+    },
+    {
         title: '3D Portfolio Website',
         category: 'portfolio',
         description: 'Own a Stunning 3D Portfolio WebsiteReady!Elevate your personal brand or freelance business with a professional 3D Portfolio Website! 🚀',
