@@ -25,7 +25,7 @@ const projects = [
         title: 'Snake Game',
         category: 'game',
         description: 'A fast, responsive HTML/CSS/JS snake game — use arrow keys or swipe to eat food, grow your snake, and beat your high score. Smooth animations and mobile-friendly controls.',
-        image: 'assets/snake game.png',
+        image: 'assets/Snake Game.png',
         demo: 'https://cwa631.github.io/Snake-Game/',
         source: 'https://buymeacoffee.com/codewithaditya631/e/456337',
         isFree: true
